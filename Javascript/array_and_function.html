@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Array</title>
+</head>
+<body>
+    <script lang="javascript">
+        //1) Array
+        document.write("<b>' JS Array'</b> <br>");
+        var arr=new Array(7,2,8,1,3,4);
+        var i, j, temp;
+        document.write("<br> <b>.....Before sort......</b><br>");
+        for(i=0;i<6;i++){  //Here i represents the index value of arr
+            document.write(arr[i]+"<br>");
+        }
+        for(i=0;i<6;i++){
+            for(j=0;j<5;j++){
+                if(arr[j]>arr[j+1]){
+                temp=arr[j];
+                arr[j]=arr[j+1];
+                arr[j+1]=temp;
+                }
+            }
+        }
+        document.write("<br> <b>.....After sort......</b><br>");
+        for(i=0;i<6;i++){  //Here i represents the index value of arr
+            document.write(arr[i]+"<br>");
+        }
+
+
+        //2)Functions
+        document.write("<br><b>'JS Functions'</b> <br>");
+        function hi(){
+            document.write("Hello there!");
+        }
+
+        //3) Parameter passing
+        
+        function hello(name,age){
+            if(name=="Nilaa"){
+                if(age=="20"){
+                window.alert("Successfully login");
+                document.write("<p>"+name + " is "+ age +" years old </P> <br>");
+            }
+            else{
+                window.alert("Invalid age");
+            }
+        }
+            else{
+                window.alert("Invalid name ");
+            }
+        }
+        
+        
+    </script>
+
+    <!--2) Functions-->
+    <p>==> Click the following button to call the function.</p>
+    <button onclick="hi()">Click</button>
+
+    <!--3) Parameter passing-->
+    <p><b>'JS Functions parameter passing '</b> </p>
+       <p>==> Click the following button to call the function using parameter passing</p>
+       <b><p id="demo1"></p></b>
+    <form action="">
+        <input type="text" name="t1" placeholder="Enter your name"> <br> <br>
+        <input type="text" name="t2" placeholder="Enter your age"> <br><br>
+        <input type="button" name="button" onclick="hello(t1.value, t2.value)" value="Click">
+    </form>
+</body>
+</html>
