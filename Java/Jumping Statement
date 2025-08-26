@@ -1,0 +1,24 @@
+public class JumpingStatement {
+    public static void main(String[] args) {
+        //Break
+        System.out.println("Break Statement");
+        int i = 1; 
+        while(i<=10){
+            if(i==5){
+                break;
+            }
+            System.out.println(i+") Nilaasri");
+            i++;
+        }
+        
+        //Continue
+        //Most of the time we use continue in for loop only
+        System.out.println("Continue Statement");
+        for (int j = 1; j <= 10; j++){
+            if(j % 2 == 0){ 
+                continue;
+            }
+            System.out.println(j+") Nilaasri");
+        }
+    }
+}
