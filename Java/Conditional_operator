@@ -1,0 +1,30 @@
+// Ternary operator with shorthand
+public class ConditionalOperator {
+    public static void main(String[] args) {
+        // Minimum of 2 numbers
+        int a = 10, b= 20;
+        int min = (a < b)? a:b;
+        System.out.println("Minimum: "+ min);
+        
+        // Maximum of 3 numbers
+        int a1 = 10, b1 = 20, c1 = 7;
+        int max = (a1 > b1) ? ((a1 > c1) ? a1 : c1) : ((b1 > c1) ? b1 : c1);
+        System.out.println("Maximum: "+ max);
+        
+        // Odd Even
+        int num = 5;
+        String result = (num % 2 == 0)? "Even" : "odd";
+        System.out.println("Number is : "+ result);
+        
+        // Nested ternary operator
+         int num1 = -8;
+         String status = (num1 > 0) ? "Positive" : (num1 < 0) ? "Negative" : "Zero";
+         System.out.println("Number is: " + status);
+         
+         //Person vote eligibility
+         int age = 21;
+         String check = (age >= 18)? "Eligible for vote": "Not Eligible for vote";
+         System.out.println(check);
+        
+    }
+}
