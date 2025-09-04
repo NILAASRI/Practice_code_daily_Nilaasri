@@ -1,3 +1,4 @@
+// This a Numeric Pattern Design - 1 with display same code with i and j and its reverse.
 class Main {
     public static void main(String[] args) {
         int n = 5;
