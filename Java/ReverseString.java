@@ -13,7 +13,7 @@ public class ReverseString{
     }
 }
 
+//Input:
+Enter a string: Hello, World!
 //Output:
-// Enter a string: 
-// Hello, World!
-// Reversed String: !dlroW ,olleH
+Reversed String: !dlroW ,olleH
