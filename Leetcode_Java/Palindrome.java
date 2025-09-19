@@ -1,3 +1,4 @@
+// Palindrome Number
 class Solution {
     public boolean isPalindrome(int x) {
         if (x<0) return false;
@@ -17,3 +18,8 @@ class Solution {
         }
     }
 }
+
+//Input 1: x = 121
+//Output 1: true
+//Input 2: x = -121
+//Output 2: false
