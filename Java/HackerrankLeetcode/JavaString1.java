@@ -1,3 +1,4 @@
+// Java String Problems with 3 set of concepts
 import java.util.*;
 
 public class Solution {
@@ -30,3 +31,14 @@ public class Solution {
         System.out.println(capitalizedA + " " + capitalizedB);
     }
 }
+
+/*
+Sample Input 0
+hello
+java
+
+Sample Output
+9
+No
+Hello Java
+*/
